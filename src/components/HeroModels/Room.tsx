@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from 'three'
 import { BlendFunction } from 'postprocessing'
@@ -51,7 +50,7 @@ type GLTFResult = any & {
 export function Room(props: any) {
         const { nodes, materials } = useGLTF('/models/optimized-room.glb') as GLTFResult
         const matcapTexture = useTexture('/img/textures/mat1.png')
-        const screensRef = useRef<THREE.Object3D<THREE.Event> | null>(null)
+        const screensRef = useRef<any>(null)
         const curtainMaterial = new THREE.MeshPhongMaterial({
                 color: '#d90429',
         })
