@@ -1,6 +1,5 @@
 import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
-import type { TypedArray } from 'three'
 
 const Particles = ({ count = 200 }) => {
         const mesh = useRef<any>(null)
@@ -41,7 +40,7 @@ const Particles = ({ count = 200 }) => {
         return (
                 <points ref={mesh}>
                         <bufferGeometry>
-                                <bufferAttribute attach='attributes-position' count={count} array={positions} itemSize={3} args={[[] as unknown as TypedArray, 3]} />
+                                <bufferAttribute attach='attributes-position' count={count} array={positions} itemSize={3} args={[positions, 3]} />
                         </bufferGeometry>
                         <pointsMaterial color='#ffffff' size={0.05} transparent opacity={0.9} depthWrite={false} />
                 </points>
