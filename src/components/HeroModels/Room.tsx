@@ -1,5 +1,5 @@
+/* eslint-disable */
 import { useGLTF, useTexture } from '@react-three/drei'
-// eslint-disable-next-line
 import * as THREE from 'three'
 import { BlendFunction } from 'postprocessing'
 import { EffectComposer, SelectiveBloom } from '@react-three/postprocessing'

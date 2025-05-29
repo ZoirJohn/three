@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+ 
 import * as THREE from 'three'
 
 export default function HeroLights() {

@@ -1,6 +1,6 @@
 export default function Button({ className, text, id }: { className: string; text: string; id: string }) {
         return (
-                <a className={`${className} cta-wrapper`}>
+                <a className={`${className} cta-wrapper`} id={id}>
                         <div className='cta-button group'>
                                 <div className='bg-circle' />
                                 <p className='text'>{text}</p>
