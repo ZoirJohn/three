@@ -24,6 +24,9 @@ export default function LogoSection() {
                                         {logoIconsList.map((logo, id) => {
                                                 return <LogoIcon logo={logo} key={id} />
                                         })}
+                                        {logoIconsList.map((logo, id) => {
+                                                return <LogoIcon logo={logo} key={id} />
+                                        })}
                                 </div>
                         </div>
                 </section>
