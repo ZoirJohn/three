@@ -23,7 +23,7 @@ export default function TechStack() {
                 )
         }, [])
         return (
-                <section id='skills' className='flex flex-center section-padding'>
+                <section id='skills' className='flex-center section-padding'>
                         <div className='w-full h-full px-5 md:px-10'>
                                 <TitleHeader title='My Preferred Tech Stack' sub='The skills I Bring to the table' />
                                 <div className='tech-grid'>

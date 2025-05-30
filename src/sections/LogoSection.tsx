@@ -16,7 +16,7 @@ function LogoIcon({
 
 export default function LogoSection() {
         return (
-                <div className='relative my-10 md:my-20'>
+                <section className='relative my-10 md:my-20'>
                         <div className='gradient-edge' />
                         <div className='gradient-edge' />
                         <div className='marquee h-52'>
@@ -26,6 +26,6 @@ export default function LogoSection() {
                                         })}
                                 </div>
                         </div>
-                </div>
+                </section>
         )
 }

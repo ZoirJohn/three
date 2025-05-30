@@ -33,7 +33,7 @@ export default function Showcase() {
                 })
         }, [])
         return (
-                <div id='work' className='app-showcase' ref={sectionRef}>
+                <section id='work' className='app-showcase' ref={sectionRef}>
                         <div className='w-full'>
                                 <div className='showcaselayout'>
                                         <div className='first-project-wrapper' ref={project1Ref}>
@@ -61,6 +61,6 @@ export default function Showcase() {
                                         </div>
                                 </div>
                         </div>
-                </div>
+                </section>
         )
 }

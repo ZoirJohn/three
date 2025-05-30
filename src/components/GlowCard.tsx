@@ -9,10 +9,10 @@ export default function GlowCard({
         card: {
                 review: string
                 imgPath: string
-                logoPath: string
-                title: string
-                date: string
-                responsibilities: string[]
+                logoPath?: string
+                title?: string
+                date?: string
+                responsibilities?: string[]
         }
         i: number
 }) {

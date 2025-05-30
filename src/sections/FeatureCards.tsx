@@ -2,7 +2,7 @@ import { abilities } from '../constants'
 
 export default function FeatureCards() {
         return (
-                <div className='w-full padding-x-lg'>
+                <section className='w-full padding-x-lg'>
                         <div className='mx-auto grid-3-cols'>
                                 {abilities.map((ability, id) => {
                                         return (
@@ -16,6 +16,6 @@ export default function FeatureCards() {
                                         )
                                 })}
                         </div>
-                </div>
+                </section>
         )
 }
