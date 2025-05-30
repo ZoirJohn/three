@@ -23,7 +23,7 @@ export default function TechIcon({
                                 }
                         })
                 }
-        }, [])
+        }, [model.name,scene.scene])
         return (
                 <Canvas>
                         <ambientLight intensity={0.3} />
