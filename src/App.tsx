@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import FeatureCards from './sections/FeatureCards'
 import Hero from './sections/Hero'
 import Showcase from './sections/Showcase'
+import Experience from './sections/Experience'
 
 export default function App() {
         return (
@@ -12,6 +13,7 @@ export default function App() {
                         <Showcase />
                         <LogoSection />
                         <FeatureCards />
+                        <Experience />
                 </>
         )
 }
