@@ -31,10 +31,10 @@ section {
 
 @layer utilities {
         .flex-center {
-                @apply flex justify-center items-center;
+                @apply flex items-center justify-center;
         }
         .flex-col-center {
-                @apply flex flex-col justify-center items-center;
+                @apply flex flex-col items-center justify-center;
         }
 }
 
@@ -48,11 +48,11 @@ section {
         }
 
         .section-padding {
-                @apply px-5 md:px-10 md:mt-40 mt-20;
+                @apply px-5 mt-20 md:px-10 md:mt-40;
         }
 
         .mt-responsive {
-                @apply xl:mt-20 md:mt-0 mt-40;
+                @apply mt-40 xl:mt-20 md:mt-0;
         }
 
         .grid-base {
@@ -60,15 +60,15 @@ section {
         }
 
         .grid-2-cols {
-                @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+                @apply grid grid-cols-1 gap-6 md:grid-cols-2;
         }
 
         .grid-3-cols {
-                @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+                @apply grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3;
         }
 
         .grid-3-cols-md-tight {
-                @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+                @apply grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-0;
         }
 
         .grid-4-cols {
@@ -76,7 +76,7 @@ section {
         }
 
         .grid-12-cols {
-                @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+                @apply grid grid-cols-1 gap-10 xl:grid-cols-12;
         }
 
         .hero-layout {
@@ -86,7 +86,7 @@ section {
         .hero-text {
                 @apply flex flex-col justify-center md:text-[60px] text-[30px] font-semibold relative z-10 pointer-events-none;
                 img {
-                        @apply size-8 md:size-10 object-contain;
+                        @apply object-contain size-8 md:size-10;
                 }
                 .slide {
                         @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
@@ -94,7 +94,7 @@ section {
         }
 
         .hero-badge {
-                @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+                @apply px-4 py-2 text-sm rounded-full bg-black-200 w-fit md:text-base text-nowrap;
         }
 
         .hero-3d-layout {
@@ -109,25 +109,25 @@ section {
                 }
 
                 &.not-scrolled {
-                        @apply md:top-5 top-0 bg-transparent;
+                        @apply top-0 bg-transparent md:top-5;
                 }
 
                 .inner {
-                        @apply mx-auto flex items-center justify-between;
+                        @apply flex items-center justify-between mx-auto;
                 }
 
                 .logo {
-                        @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+                        @apply text-xl font-semibold transition-transform duration-300 text-white-50 md:text-2xl hover:scale-105;
                 }
 
                 nav.desktop {
-                        @apply hidden lg:flex items-center;
+                        @apply items-center hidden lg:flex;
 
                         ul {
                                 @apply flex space-x-8;
 
                                 li {
-                                        @apply text-white-50 relative;
+                                        @apply relative text-white-50;
 
                                         span {
                                                 @apply transition-colors duration-300 hover:text-white;
@@ -144,20 +144,20 @@ section {
                         @apply flex;
 
                         .inner {
-                                @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+                                @apply px-5 py-2 text-black transition-colors duration-300 bg-white rounded-lg group-hover:bg-black-50;
 
                                 span {
-                                        @apply group-hover:text-white transition-colors duration-300;
+                                        @apply transition-colors duration-300 group-hover:text-white;
                                 }
                         }
                 }
         }
 
         .app-showcase {
-                @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+                @apply flex items-center justify-center w-full px-5 py-10 mt-20 md:px-20 md:py-20;
 
                 .showcaselayout {
-                        @apply flex xl:flex-row flex-col gap-10 justify-between;
+                        @apply flex flex-col justify-between gap-10 xl:flex-row;
                 }
 
                 .first-project-wrapper {
@@ -167,19 +167,19 @@ section {
                                 @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
 
                                 img {
-                                        @apply w-full h-full object-cover rounded-xl absolute inset-0;
+                                        @apply absolute inset-0 object-cover w-full h-full rounded-xl;
                                 }
                         }
 
                         .text-content {
-                                @apply space-y-5 mt-5;
+                                @apply mt-5 space-y-5;
 
                                 .badges {
                                         @apply flex gap-2 mb-4;
                                 }
 
                                 h2 {
-                                        @apply text-2xl md:text-3xl lg:text-4xl font-bold;
+                                        @apply text-2xl font-bold md:text-3xl lg:text-4xl;
                                 }
                         }
                 }
@@ -192,11 +192,11 @@ section {
                         }
 
                         img {
-                                @apply w-full h-full object-contain rounded-xl;
+                                @apply object-contain w-full h-full rounded-xl;
                         }
 
                         h2 {
-                                @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
+                                @apply mt-5 text-lg font-semibold md:text-xl lg:text-2xl;
                         }
                 }
         }
@@ -206,7 +206,7 @@ section {
         }
 
         .cta-button {
-                @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
+                @apply relative flex items-center justify-center px-4 py-4 overflow-hidden rounded-lg cursor-pointer bg-black-200;
 
                 .bg-circle {
                         @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 
@@ -215,16 +215,14 @@ section {
                 }
 
                 .text {
-                        @apply uppercase md:text-lg text-black transition-all duration-500
-        group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+                        @apply text-black uppercase transition-all duration-500 -translate-x-5 md:text-lg group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0;
                 }
 
                 .arrow-wrapper {
-                        @apply group-hover:bg-white-50 size-10 rounded-full absolute right-10 top-1/2 
-        -translate-y-1/2 flex justify-center items-center overflow-hidden;
+                        @apply absolute flex items-center justify-center overflow-hidden -translate-y-1/2 rounded-full group-hover:bg-white-50 size-10 right-10 top-1/2;
 
                         img {
-                                @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
+                                @apply transition-all duration-500 translate-y-0 size-5 xl:-translate-y-32 animate-bounce group-hover:translate-y-0;
                         }
                 }
         }
@@ -234,7 +232,7 @@ section {
         }
 
         .marquee-item {
-                @apply md:w-40 w-32;
+                @apply w-32 md:w-40;
         }
 
         .timeline-wrapper {
@@ -246,15 +244,15 @@ section {
         }
 
         .timeline-logo {
-                @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+                @apply flex items-center justify-center flex-none border rounded-full md:size-20 size-10 md:-translate-y-7 border-black-50 bg-black-100;
         }
 
         .exp-card-wrapper {
-                @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
+                @apply flex flex-col-reverse justify-between gap-10 xl:flex-row xl:gap-20;
         }
 
         .gradient-edge {
-                @apply w-36 h-full absolute bottom-0 z-20;
+                @apply absolute bottom-0 z-20 h-full w-36;
         }
 
         .tech-card-animated-bg {
@@ -262,33 +260,33 @@ section {
         }
 
         .tech-card-content {
-                @apply flex flex-col md:justify-center items-center xl:gap-5 xl:h-[50vh] overflow-hidden relative z-10 group-hover:cursor-grab;
+                @apply relative z-10 flex flex-col items-center overflow-hidden md:justify-center xl:gap-5 md:h-90 group-hover:cursor-grab;
 
                 & p {
-                        @apply text-lg 2xl:text-2xl pb-5 xl:pb-0 font-semibold text-white-50 text-center;
+                        @apply pb-5 text-lg font-semibold text-center 2xl:text-2xl xl:pb-0 text-white-50;
                 }
         }
 
         .tech-grid {
-                @apply grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 xl:gap-16 md:gap-10 gap-5 mt-16;
+                @apply grid grid-cols-1 gap-5 mt-16 xl:grid-cols-5 md:grid-cols-3 xl:gap-16 md:gap-10;
         }
 
         .tech-icon-wrapper {
-                @apply flex justify-center items-center w-52 h-60 relative;
+                @apply relative flex items-center justify-center w-52 h-60;
         }
 
         form {
                 label {
-                        @apply block text-white-50 mb-2;
+                        @apply block mb-2 text-white-50;
                 }
 
                 input,
                 textarea {
-                        @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-50 bg-blue-100 rounded-md;
+                        @apply w-full px-4 py-4 text-sm bg-blue-100 rounded-md md:text-base placeholder:text-blue-50;
                 }
 
                 a {
-                        @apply w-full py-4 bg-white text-black font-semibold rounded-md flex justify-center items-center gap-2;
+                        @apply flex items-center justify-center w-full gap-2 py-4 font-semibold text-black bg-white rounded-md;
 
                         img {
                                 @apply inline-block;
@@ -297,21 +295,21 @@ section {
         }
 
         .footer {
-                @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
+                @apply flex items-center justify-center px-5 my-10 mt-10 md:mt-20 text-white-50 md:px-20 xl:px-20;
 
                 .footer-container {
-                        @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full;
+                        @apply grid w-full grid-cols-1 gap-5 md:grid-cols-3 md:gap-0;
                 }
 
                 p {
-                        @apply text-center md:text-start cursor-pointer;
+                        @apply text-center cursor-pointer md:text-start;
                 }
 
                 .socials {
                         @apply flex items-center justify-center gap-5;
 
                         .icon {
-                                @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
+                                @apply flex items-center justify-center transition-all duration-500 border cursor-pointer border-black-50 bg-black-100 rounded-xl size-10 md:size-12 hover:bg-black-50;
                         }
 
                         img {
