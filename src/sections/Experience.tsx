@@ -54,7 +54,7 @@ export default function Experience() {
                                                                         <div className='xl:w-2/6'>
                                                                                 <GlowCard card={card} i={id}>
                                                                                         <div>
-                                                                                                <img src={card.imgPath} alt={card.title} />
+                                                                                                <img src={card.imgPath} alt={card.title} className='h-9' />
                                                                                         </div>
                                                                                 </GlowCard>
                                                                         </div>

@@ -29,10 +29,10 @@ const words = [
 ]
 
 const counterItems = [
-        { value: 15, suffix: '+', label: 'Years of Experience' },
-        { value: 200, suffix: '+', label: 'Satisfied Clients' },
-        { value: 108, suffix: '+', label: 'Completed Projects' },
-        { value: 90, suffix: '%', label: 'Client Retention Rate' },
+        { value: 5, suffix: '+', label: 'Years of Experience' },
+        { value: 16, suffix: '+', label: 'Satisfied Clients' },
+        { value: 11, suffix: '+', label: 'Completed Projects' },
+        { value: 95, suffix: '%', label: 'Client Retention Rate' },
 ]
 
 const logoIconsList = [
@@ -89,40 +89,11 @@ const abilities = [
         },
 ]
 
-const techStackImgs = [
-        {
-                name: 'React Developer',
-                imgPath: '/img/logos/react.png',
-        },
-        {
-                name: 'Python Developer',
-                imgPath: '/img/logos/python.svg',
-        },
-        {
-                name: 'Backend Developer',
-                imgPath: '/img/logos/node.png',
-        },
-        {
-                name: 'Interactive Developer',
-                imgPath: '/img/logos/three.png',
-        },
-        {
-                name: 'Project Manager',
-                imgPath: '/img/logos/git.svg',
-        },
-]
-
 const techStackIcons = [
         {
                 name: 'React Developer',
                 modelPath: '/models/react_logo-transformed.glb',
                 scale: 1,
-                rotation: [0, 0, 0],
-        },
-        {
-                name: 'Python Developer',
-                modelPath: '/models/python-transformed.glb',
-                scale: 0.8,
                 rotation: [0, 0, 0],
         },
         {
@@ -151,7 +122,7 @@ const expCards = [
                 imgPath: '/img/exp1.png',
                 logoPath: '/img/logo1.png',
                 title: 'Frontend Developer',
-                date: 'January 2023 - Present',
+                date: 'January 2022 - Present',
                 responsibilities: [
                         'Developed and maintained user-facing features for the Hostinger website.',
                         'Collaborated closely with UI/UX designers to ensure seamless user experiences.',
@@ -163,7 +134,7 @@ const expCards = [
                 imgPath: '/img/exp2.png',
                 logoPath: '/img/logo2.png',
                 title: 'Full Stack Developer',
-                date: 'June 2020 - December 2023',
+                date: 'June 2021 - December 2021',
                 responsibilities: [
                         "Led the development of Docker's web applications, focusing on scalability.",
                         'Worked with backend engineers to integrate APIs seamlessly with the frontend.',
@@ -174,8 +145,8 @@ const expCards = [
                 review: 'Zoirjon’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.',
                 imgPath: '/img/exp3.png',
                 logoPath: '/img/logo3.png',
-                title: 'React Native Developer',
-                date: 'March 2019 - May 2020',
+                title: 'JavaScript Developer',
+                date: 'November 2020 - May 2020',
                 responsibilities: [
                         "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
                         'Improved app performance and user experience through code optimization and testing.',
@@ -256,4 +227,4 @@ const socialImgs = [
         },
 ]
 
-export { words, abilities, logoIconsList, counterItems, expCards, expLogos, testimonials, socialImgs, techStackIcons, techStackImgs, navLinks }
+export { words, abilities, logoIconsList, counterItems, expCards, expLogos, testimonials, socialImgs, techStackIcons, navLinks }
